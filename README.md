@@ -1,4 +1,4 @@
-##Aplicación de consola de tablas de multiplicar
+## Aplicación de consola de tablas de multiplicar
 
 Para instalar las dependencias:
 ```
