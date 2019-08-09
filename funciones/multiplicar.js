@@ -20,17 +20,18 @@ let crearArchivo = (base, limite) => {
         }
         
         let tablaMultiplicar = "";
-        
+        let nombreArchivo = `./tablas/tabla-del-${base}-hasta-el-${limite}.txt`;
+
         for(let i = 1; i <= limite; i++){
             tablaMultiplicar += `${base} * ${i} = ${base * i}\n`;
         }
         
-        fs.writeFile(`./tablas/tabla-del-${base}-hasta-el-${limite}.txt`, tablaMultiplicar, (err) => {
+        fs.writeFile(nombreArchivo, tablaMultiplicar, (err) => {
             if(err){
                 reject(err);
             }
             else{
-                resolve(`tabla-del-${base}-hasta-el-${limite}.txt`);
+                resolve(nombreArchivo);
             }         
           });
     });

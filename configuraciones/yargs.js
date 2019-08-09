@@ -11,11 +11,11 @@ const opcionesComandos = {
     }
 }
 
-const argv = require("yargs")
+const argumentos = require("yargs")
     .command("listar", "Imprime la tabla de multiplicar.", opcionesComandos)
     .command("crear", "Crear un archivo .txt con la tabla según los valores ingresados", opcionesComandos)
     .argv;
 
 module.exports = {
-    argv
+    argumentos
 }
